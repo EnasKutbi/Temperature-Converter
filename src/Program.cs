@@ -12,14 +12,14 @@ class TemperatureConverter
                 Console.Write("Enter temperature Value and its unit (C or F), or type Q to exit: ");
                 string input = Console.ReadLine() ?? "";
 
-                if (input.ToLower() == ("q"))
+                if (input.ToLower() == "q")
                 {
                     Console.WriteLine("Program terminated.");
                     break;
                 }
 
                 string[] parts = input.Split(" ");
-                
+
                 if (parts.Length != 2)
                 {
                     Console.WriteLine("Invalid input. Please enter a temperature value and its unit.");
